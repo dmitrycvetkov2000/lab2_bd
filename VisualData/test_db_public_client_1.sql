@@ -1,0 +1,4 @@
+INSERT INTO public.client (id, name, middle_name, last_name, address, phone) VALUES (4, 'Иван', 'Александрович', 'fdfgdf', 'address1', '8000000000');
+INSERT INTO public.client (id, name, middle_name, last_name, address, phone) VALUES (5, 'Сергей', 'Алексеевич', 'fdfgdf2', 'address2', '8000000000');
+INSERT INTO public.client (id, name, middle_name, last_name, address, phone) VALUES (6, 'Максим', 'Петрович', 'fdfgdf3', 'address3', '8000000000');
+INSERT INTO public.client (id, name, middle_name, last_name, address, phone) VALUES (7, 'test_name', 'test_middlename', 'test_lastname', 'test_address', 'test_phone');

@@ -1,0 +1,30 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd" >
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Connection settings -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost/test_db?createDatabaseIfNotExist=true</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">12345</property>
+
+        <!-- SQL dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
+
+        <!-- Print executed SQL to stdout -->
+        <property name="show_sql">true</property>
+
+        <!-- Drop and re-create all database on startup -->
+        <property name="hibernate.hbm2ddl.auto">none</property>
+
+        <!-- Annotated entity classes -->
+        <mapping class="com.example.model.Product"/>
+        <mapping class="com.example.model.Client"/>
+        <mapping class="com.example.model.Order"/>
+        <mapping class="com.example.model.ClientOrder"/>
+        <mapping class="com.example.model.OrderDetails"/>
+
+    </session-factory>
+</hibernate-configuration>
